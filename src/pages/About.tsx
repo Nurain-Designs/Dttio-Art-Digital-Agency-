@@ -31,10 +31,10 @@ const stats = [
 ];
 
 const team = [
-  { name: "Eliana Vance", role: "Creative Director", img: "/team_eliana.png" },
-  { name: "Theo Kapoor", role: "Prompt Architect", img: "/team_theo.png" },
-  { name: "Mira Okafor", role: "Art Director", img: "/team_mira.png" },
-  { name: "Hiro Tanaka", role: "Lead Engineer", img: "/team_hiro.png" },
+  { name: "Eliana Vance", role: "Creative Director", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}team_eliana.png` },
+  { name: "Theo Kapoor", role: "Prompt Architect", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}team_theo.png` },
+  { name: "Mira Okafor", role: "Art Director", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}team_mira.png` },
+  { name: "Hiro Tanaka", role: "Lead Engineer", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}team_hiro.png` },
 ];
 
 export default function About() {

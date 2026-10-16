@@ -13,14 +13,14 @@ type Product = {
 type CartItem = Product & { qty: number };
 
 const products: Product[] = [
-  { title: "Mirage Sphere", price: 89, tag: "Print", img: "/images/sphere-desert.jpeg" },
-  { title: "Cloud Stairway", price: 129, tag: "Limited", img: "/images/pink-cloud-ball.jpeg" },
-  { title: "Glass Wheel", price: 75, tag: "Print", img: "/images/wheel-desert.jpeg" },
-  { title: "Pink Reverie", price: 149, tag: "NFT", img: "/images/pink-bubbles.jpg" },
-  { title: "Echo Chair", price: 65, tag: "Poster", img: "/images/tree-chair.jpeg" },
-  { title: "Prism Bloom", price: 110, tag: "Print", img: "/images/portal-clouds.png" },
-  { title: "Solar Drift", price: 95, tag: "Limited", img: "/images/mirror-desert.jpg" },
-  { title: "Lunar Bed", price: 180, tag: "Original", img: "/images/glass-water.jpeg" },
+  { title: "Mirage Sphere", price: 89, tag: "Print", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/sphere-desert.jpeg` },
+  { title: "Cloud Stairway", price: 129, tag: "Limited", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/pink-cloud-ball.jpeg` },
+  { title: "Glass Wheel", price: 75, tag: "Print", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/wheel-desert.jpeg` },
+  { title: "Pink Reverie", price: 149, tag: "NFT", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/pink-bubbles.jpg` },
+  { title: "Echo Chair", price: 65, tag: "Poster", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/tree-chair.jpeg` },
+  { title: "Prism Bloom", price: 110, tag: "Print", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/portal-clouds.png` },
+  { title: "Solar Drift", price: 95, tag: "Limited", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/mirror-desert.jpg` },
+  { title: "Lunar Bed", price: 180, tag: "Original", img: `${(import.meta.env.VITE_PAGES_BASE ?? "/")}images/glass-water.jpeg` },
 ];
 
 const filters = ["All", "Print", "Limited", "Poster", "NFT", "Original"];
